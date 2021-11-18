@@ -11,4 +11,9 @@ public class LeadService {
     @Autowired
     ProductoRepository productoRepository;
 
+    public Lead salvarCadastroLead(Lead lead){
+
+        return leadRepository.save(lead);
+    }
+
 }
